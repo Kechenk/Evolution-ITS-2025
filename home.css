@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('pexels-philippedonn-1169754.jpg'); /* Add this line */
+    background-size: 100% 100%; /* Add this line */
+    background-position: center; /* Add this line */
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background with 50% opacity */
+    padding: 10px 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #ccc;
+}
+
+/* Banner styling */
+.banner {
+    background: rgba(0, 0, 0, 0.5); /* Transparent background with 50% opacity */
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* Events Section */
+.events {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.events h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.event-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background with 50% opacity */
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent background with 50% opacity */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
