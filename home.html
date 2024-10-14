@@ -1,51 +1,63 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EVOLUTION ITS 2025</title>
+    <title>EVOLUTION 2025</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <!-- Header -->
+    
     <header>
-        <div class="logo">EVOLUTION 2025</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#about">Tentang Kami</a></li>
-                <li><a href="#event">Event</a></li>
-            </ul>
+        <div class="navbar">
+            <a href="#" class="logo">EVOLUTION 2025</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="#">Event</a></li>
+                </ul>
+            </nav>
             <div class="auth-buttons">
-                <a href="#" class="register">Register</a>
-                <a href="#" class="login">Login</a>
+                <a href="#" class="register-btn">Register</a>
+                <a href="#" class="login-btn">Login</a>
             </div>
-        </nav>
+        </div>
     </header>
-
-    <!-- Banner -->
-    <section class="banner" id="home">
-        <div class="banner-text">
-            <h1>EVOLUTION 2025</h1>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>EVOLUTION 
+                <br><span>2025</span></br>
+            </h1>
+            <div class="sub-event-icons">
+                <img src="icon1.png" alt="Icon 1">
+                <img src="icon2.png" alt="Icon 2">
+                <img src="icon3.png" alt="Icon 3">
+                <img src="icon4.png" alt="Icon 4">
+            </div>
+        </div>
+        <div class="scroll-down">
+            <img src="down-arrow.png" alt="Scroll Down">
         </div>
     </section>
+    
+    <!-- About Section -->
+    <section class="about">
+        <h2>About EVOLUTION</h2>
+        <p>EVOLUTION (Electrical Event for Technology and Competition)...</p>
+        <button class="learn-more-btn">Lebih Lanjut</button>
+    </section>
 
-    <!-- Sub-events Section -->
-    <section class="events" id="events">
-        <h2>Sub-Events</h2>
-        <div class="event-list">
-            <div class="event-card">
-                <h3><a href="ELECTRA\electra.html">ELECTRA</a></h3>
-                <p>Online quiz competition for high school students.</p>
-            </div>
-            <div class="event-card">
-                <h3><a href="EVOLVE\evolve.html">BARONAS</a></h3>
-                <p>National robotics competition for aspiring innovators.</p>
-            </div>
-            <div class="event-card">
-                <h3><a href="BARONAS\baronas.html">EVOLVE</a></h3>
-                <p>A platform for sharing the latest technological advancements.</p>
-            </div>
+    <!-- Sub-Events Section -->
+    <section class="sub-events">
+        <h2>Our Sub-Events</h2>
+        <div class="sub-event">
+            <h3>Electra</h3>
+            <p>Description about Electra...</p>
+        </div>
+        <div class="sub-event">
+            <h3>Baronas</h3>
+            <p>Description about Baronas...</p>
         </div>
     </section>
 
@@ -55,5 +67,10 @@
     </footer>
 
     <script src="script.js"></script>
+    <div id="container3D"></div>
+    <script type="module" src="app.js"></script>
+    <script type="module">
+        import three from 'https://cdn.skypack.dev/three';
+      </script>
 </body>
 </html>
