@@ -18,10 +18,10 @@
             </div>
             <nav>
                 <ul>
-                    <li><a href="#">Tentang Kami</a></li>
+                    <li><a href="about">Tentang Kami</a></li>
                     <li><a href="#">Event</a></li>
                     <li><a href="#" class="register-btn">Register</a></li>
-                    <li><a href="#" class="login-btn">Login</a></li>
+                    <li><a href="Login Page\index.html" class="login-btn">Login</a></li>
                 </ul>
             </nav>
             <div class="burger">
@@ -52,40 +52,90 @@
     </section>
     
     <!-- About Section -->
-    <div>
     <section class="about">
-        <h2>About EVOLUTION</h2>
-        <p>EVOLUTION (Electrical Event for Technology and Competition)...</p>
-        <button class="learn-more-btn">Lebih Lanjut</button>
+        <h2>ABOUT <span>EVOLUTION</span></h2>
+        <p>Evolution (Electrical Event for Technology and Competition) merupakan suatu badan yang menaungi 3 sub-event, yaitu Electra (Electrical Competition Tour & Rally), Baronas (Lomba Robot Nasional), dan Stellar Mind Talks.</p>
+        <button class="learn-more-btn">Lebih Lanjut ></button>
+    </section>  
+
+    <!-- Documentation Button Section -->
+    <section class="documentation">
+        <button class="last-year-doc-btn">DOKUM TAHUN LALU</button>
     </section>
-    </div>
 
     <!-- Sub-Events Section -->
-    <div>
-    <section class="sub-events">
-        <h2>Our Sub-Events</h2>
-        <div class="sub-event">
-            <h3>Electra</h3>
-            <p>Description about Electra...</p>
+<section class="sub-events">
+    <h2>Our <span>Sub-Events</span></h2>
+    <div class="sub-event-card">
+        <div class="sub-event-content">
+            <img src="Assets\logo electra 2.png" alt="Electra Icon" class="sub-event-icon">
+            <div>
+                <h3>Electra</h3>
+                <p>ELECTRA (Electrical Competition Tour & Rally) adalah kompetisi tahunan yang diselenggarakan oleh Departemen Teknik Elektro ITS.</p>
+            </div>
         </div>
-        <div class="sub-event">
-            <h3>Baronas</h3>
-            <p>Description about Baronas...</p>
-        </div>
-        <div class="sub-event">
-            <h3>evolve</h3>
-            <p>Description about Evolve...</p>
-        </div>
-    </section>
+        <a href="#" class="arrow-btn">></a>
     </div>
-    
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 EVOLUTION ITS. All rights reserved.</p>
-    </footer>
+
+    <div class="sub-event-card">
+        <div class="sub-event-content">
+            <img src="Assets\logo baronas 2.png" alt="Baronas Icon" class="sub-event-icon">
+            <div>
+                <h3>Baronas</h3>
+                <p>Baronas adalah lomba robot nasional serta kompetisi paper yang diselenggarakan oleh Departemen Teknik Elektro ITS.</p>
+            </div>
+        </div>
+        <a href="#" class="arrow-btn">></a>
+    </div>
+
+    <div class="sub-event-card">
+        <div class="sub-event-content">
+            <img src="Assets\logo evolve 2.png" alt="Evolve Icon" class="sub-event-icon">
+            <div>
+                <h3>Evolve</h3>
+                <p>Evolution (Electrical Event for Technology and Competition) merupakan suatu badan yang menaungi 3 sub-event.</p>
+            </div>
+        </div>
+        <a href="#" class="arrow-btn">></a>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo Section -->
+        <div class="footer-logo">
+            <img src="Assets\logo evolution 2.png" alt="Evolution Logo" class="footer-logo-img">
+            <h2>EVOLUTION <span>2025</span></h2>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </div>
+
+            <!-- Sub-Event Links Section -->
+            <div class="footer-column">
+                <h3>Sub-Event</h3>
+                <ul>
+                    <li><a href="#" class="electra">Electra</a></li>
+                    <li><a href="#" class="baronas">Baronas</a></li>
+                    <li><a href="#" class="evolve">Evolve</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script src="script.js"></script>
     <div id="container3D"></div>
     <script type="module" src="app.js"></script>
+
 </body>
 </html>
