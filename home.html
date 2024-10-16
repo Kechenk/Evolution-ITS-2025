@@ -7,48 +7,61 @@
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    
     <header>
         <div class="navbar">
-            <a href="#" class="logo">EVOLUTION 2025</a>
+            <div class="logo-text">
+                <img src="Assets\logo evolution 2.png" alt="Icon 4">
+                <p class="top">
+                    <span class="evolution-text">EVOLUTION</span> <br>
+                    <span class="year-text">2025</span>
+                </p>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#">Tentang Kami</a></li>
                     <li><a href="#">Event</a></li>
+                    <li><a href="#" class="register-btn">Register</a></li>
+                    <li><a href="#" class="login-btn">Login</a></li>
                 </ul>
             </nav>
-            <div class="auth-buttons">
-                <a href="#" class="register-btn">Register</a>
-                <a href="#" class="login-btn">Login</a>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </div>
     </header>
     
     <section class="hero">
+        <img src="Assets\Background.png" alt="Background Image" class="hero-background"/>
+        <img src="Assets\Astronaut 1.png" alt="Astronaut Image" class="astronaut-background">
         <div class="hero-content">
             <h1>EVOLUTION 
                 <br><span>2025</span></br>
             </h1>
             <div class="sub-event-icons">
-                <img src="icon1.png" alt="Icon 1">
-                <img src="icon2.png" alt="Icon 2">
-                <img src="icon3.png" alt="Icon 3">
-                <img src="icon4.png" alt="Icon 4">
+                <img src="Assets\logo evolution 2.png" alt="Icon 1">
+                <img src="Assets\logo electra 2.png" alt="Icon 2">
+                <img src="Assets\logo baronas 2.png" alt="Icon 3">
+                <img src="Assets\logo evolve 2.png" alt="Icon 4">
             </div>
-        </div>
-        <div class="scroll-down">
-            <img src="down-arrow.png" alt="Scroll Down">
+            <div class="scroll-down">
+                <img src="Assets\_.png" alt="Scroll Down">
+            </div>
         </div>
     </section>
     
     <!-- About Section -->
+    <div>
     <section class="about">
         <h2>About EVOLUTION</h2>
         <p>EVOLUTION (Electrical Event for Technology and Competition)...</p>
         <button class="learn-more-btn">Lebih Lanjut</button>
     </section>
+    </div>
 
     <!-- Sub-Events Section -->
+    <div>
     <section class="sub-events">
         <h2>Our Sub-Events</h2>
         <div class="sub-event">
@@ -59,8 +72,13 @@
             <h3>Baronas</h3>
             <p>Description about Baronas...</p>
         </div>
+        <div class="sub-event">
+            <h3>evolve</h3>
+            <p>Description about Evolve...</p>
+        </div>
     </section>
-
+    </div>
+    
     <!-- Footer -->
     <footer>
         <p>&copy; 2025 EVOLUTION ITS. All rights reserved.</p>
@@ -69,8 +87,5 @@
     <script src="script.js"></script>
     <div id="container3D"></div>
     <script type="module" src="app.js"></script>
-    <script type="module">
-        import three from 'https://cdn.skypack.dev/three';
-      </script>
 </body>
 </html>
