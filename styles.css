@@ -68,6 +68,7 @@ header {
     color: rgb(255, 146, 106);
 }
 
+
 .navbar ul {
     list-style: none;
     display: flex;
@@ -157,18 +158,42 @@ header {
 }
 
 .hero-content {
-    position: absolute;
-    bottom: -8.7%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgb(24, 24, 24);
-    height: 173px;
-    width: 489px;
-    border: 5px solid white;
-    border-radius: 22px;
-    padding: 20px;
-    text-align: center;
-    z-index: 2;
+        position: absolute;
+        bottom: -8.7%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgb(24, 24, 24);
+        height: 173px;
+        width: 489px;
+        padding: 20px;
+        text-align: center;
+        z-index: 2;
+        border: 5px solid transparent;
+        border-radius: 22px;
+        border-image: url('Mask group.svg') 1 round; /* Apply custom SVG as the border */
+        /* Preserve border radius */
+        border-radius: 22px;
+}
+
+.hero-content h1 {
+    color: rgb(255, 146, 106);
+}
+
+.hero-content span {
+    color: white
+}
+
+.sub-event-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 15px; /* Space between the icons and the text above */
+    align-items: center; /* Align vertically */
+}
+
+.sub-event-icons img {
+    width: auto;  /* Set a uniform width */
+    height: 60px; /* Maintain the aspect ratio */
 }
 
 /* Scroll Down Arrow */
@@ -204,7 +229,7 @@ header {
 /* About Section */
 .about {
     background-image: url('Assets/Background.png'); /* Use your desired background image */
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -217,10 +242,11 @@ header {
 }
 
 .about h2 {
-    font-size: 4vw;
-    color: #FF926A; /* Match the heading color */
+    font-size: 8vw;
+    color: #ffffff; /* Match the heading color */
     font-family: 'Milky Vantage', sans-serif;
     margin-bottom: 20px;
+    font-weight: lighter;
 }
 
 .about h2 span {
@@ -228,8 +254,9 @@ header {
 }
 
 .about p {
+    font-family: 'Space Mono', sans-serif;
     font-size: 1.5vw;
-    max-width: 800px;
+    max-width: 1000px;
     margin-bottom: 30px;
     line-height: 1.5;
     color: white;
@@ -238,6 +265,7 @@ header {
 
 .learn-more-btn {
     background-color: #FF926A;
+    font-family: 'Space Mono', sans-serif;
     border: none;
     padding: 15px 30px;
     color: white;
@@ -274,7 +302,7 @@ header {
 
 /* Sub-Events Section */
 .sub-events {
-    padding: 50px;
+    padding: 20px;
     background-image: url('Assets/Background.png');
     background-size: cover;
     background-position: center;
@@ -283,56 +311,71 @@ header {
 
 .sub-events h2 {
     font-size: 3vw;
-    color: #C7A7E5; /* Match the color of "Sub-Events" text */
     font-family: 'Milky Vantage', sans-serif;
     margin-bottom: 40px;
+    font-weight: lighter;
 }
 
-.sub-events h2 span {
-    color: #90C6E8; /* Color for "Our" */
+.sub-events h2 .our {
+    color: #45AFE4; 
+}
+
+.sub-events h2 .sub {
+    color: #027373; 
+}
+
+.sub-events h2 .events {
+    color: #C7A7E5; 
 }
 
 .sub-event-card {
     background-color: #111;
-    border-radius: 25px;
-    padding: 30px;
-    margin: 20px auto;
-    width: 85%;
+    border-radius: 150px;
+    padding: 15px; /* Reduce padding */
+    margin: 10px auto; /* Reduce margin */
+    width: 50%; /* Scale down width */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 3px solid #3F9AD2;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 5px solid #027373; /* Adjust the border thickness */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Slightly reduce shadow depth */
     transition: transform 0.3s;
 }
+
 
 .sub-event-card:hover {
     transform: scale(1.05);
 }
 
+/* Adjusting Colors for Each Card */
 .sub-event-card:nth-child(2) {
-    border-color: #37D79C;
+    border-color: #03588C
 }
 
 .sub-event-card:nth-child(3) {
-    border-color: #C7A7E5;
+    border-color:#786EB0
 }
 
+/* Event Content Layout */
 .sub-event-content {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 10px; /* Increased gap between icon and text */
 }
 
 .sub-event-icon {
-    width: 70px;
-    height: 70px;
+    width: 100px; /* Increased icon size */
+    height: auto;
+    display: flexbox;
+    flex-grow: 1;
 }
 
+/* Event Title Styling */
 .sub-event-card h3 {
     color: #90C6E8;
-    font-size: 2vw;
+    font-size: 2.2vw;
     font-family: 'Milky Vantage', sans-serif;
+    text-align: left;
 }
 
 .sub-event-card:nth-child(2) h3 {
@@ -343,27 +386,32 @@ header {
     color: #C7A7E5;
 }
 
+/* Event Description Text */
 .sub-event-card p {
     color: #fff;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     max-width: 600px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Mono', sans-serif;
+    text-align: left;
+
 }
 
+/* Button Styling */
 .arrow-btn {
+    flex-grow: 1;
     background-color: transparent;
     color: #fff;
     font-size: 2vw;
-    border: 2px solid #fff;
+    border: 3px solid #fff; /* Thicker border for the button */
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 70px; /* Slightly larger button */
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 0.3s ease;
     text-decoration: none;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
 .arrow-btn:hover {
@@ -372,6 +420,7 @@ header {
     box-shadow: 0 0 20px rgba(63, 154, 210, 0.8);
 }
 
+/* Hover Effect for Each Card's Button */
 .sub-event-card:nth-child(2) .arrow-btn:hover {
     background-color: #37D79C;
     box-shadow: 0 0 20px rgba(55, 215, 156, 0.8);
