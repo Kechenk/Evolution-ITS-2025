@@ -533,23 +533,31 @@ header {
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
+    .navbar ul {
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        right: 0;
-        top: 60px;
-        width: 100%;
         text-align: center;
+        padding: 0;
     }
 
-    nav ul li {
-        margin: 20px 0;
+    .navbar ul li {
+        margin: 10px 0; /* Add spacing between menu items */
+    }
+
+    .navbar a {
+        font-size: 4vw; /* Adjust font size for smaller screens */
     }
 
     .nav-active {
         display: flex;
+    }
+
+
+    .hero {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px; 
     }
 
     .hero h1 {

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('img/space-background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.back-home {
+  text-decoration: none;
+  color: #FF4500;
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #FF4500;
+}
+
+.register-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.register-form input[type="password"] {
+  margin-bottom: 5px;
+}
+
+.register-form small {
+  display: block;
+  color: #666;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.phone-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone-input span {
+  padding: 10px;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.btn-register {
+  width: 100%;
+  background-color: #FF6347;
+  border: none;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-register:hover {
+  background-color: #FF4500;
+}
+
+.login-prompt {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.login-link {
+  color: #FF4500;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.footer-colors {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-colors span {
+  width: 20%;
+  height: 10px;
+  border-radius: 5px;
+}
