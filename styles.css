@@ -34,13 +34,11 @@ header {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Header Styles */
 .navbar {
     font-family: 'Space Mono', sans-serif;                                  
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: transparent;
     position: absolute;
     top: 0;
     width: 100%;
@@ -67,7 +65,6 @@ header {
 .evolution-text {
     color: rgb(255, 146, 106);
 }
-
 
 .navbar ul {
     list-style: none;
@@ -102,21 +99,6 @@ header {
     font-weight: bold;
 }
 
-/* Burger Menu */
-.burger {
-    display: none;
-    cursor: pointer;
-}
-
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-    transition: all 0.3s ease;
-}
-
-/* Hero Section */
 .hero {
     height: 100vh;
     background-size: cover;
@@ -158,21 +140,20 @@ header {
 }
 
 .hero-content {
-        position: absolute;
-        bottom: -8.7%;
-        left: 50%;
-        transform: translateX(-50%);
-        background-color: rgb(24, 24, 24);
-        height: 173px;
-        width: 489px;
-        padding: 20px;
-        text-align: center;
-        z-index: 2;
-        border: 5px solid transparent;
-        border-radius: 22px;
-        border-image: url('Mask group.svg') 1 round; /* Apply custom SVG as the border */
-        /* Preserve border radius */
-        border-radius: 22px;
+    position: absolute;
+    bottom: -8.7%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(24, 24, 24);
+    height: 173px;
+    width: 489px;
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+    border: 5px solid transparent;
+    border-radius: 22px;
+    border-image: url('Mask group.svg') 1 round;
+    border-radius: 22px;
 }
 
 .hero-content h1 {
@@ -186,20 +167,19 @@ header {
 .sub-event-icons {
     display: flex;
     justify-content: center;
-    gap: 15px; /* Space between icons */
-    margin-top: 15px; /* Space between the icons and the text above */
-    align-items: center; /* Align vertically */
+    gap: 15px; 
+    margin-top: 15px; 
+    align-items: center; 
 }
 
 .sub-event-icons img {
-    width: auto;  /* Set a uniform width */
-    height: 60px; /* Maintain the aspect ratio */
+    width: auto;  
+    height: 60px; 
 }
 
-/* Scroll Down Arrow */
 .scroll-down {
     position: absolute;
-    bottom: -50px;
+    bottom: -100px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -207,12 +187,11 @@ header {
 }
 
 .scroll-down img {
-    width: 50px; /* Adjust size based on your preference */
+    width: 50px; 
     animation: bounce 3.5s infinite;
-    filter: brightness(1.5); /* Makes the icon more visible */
+    filter: brightness(1.5);
 }
 
-/* Bounce Animation */
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
@@ -225,10 +204,8 @@ header {
     }
 }
 
-
-/* About Section */
 .about {
-    background-image: url('Assets/Background.png'); /* Use your desired background image */
+    background-image: url('Assets/Background.png'); 
     background-repeat: repeat-y;
     height: 100vh;
     background-size: cover;
@@ -243,14 +220,14 @@ header {
 
 .about h2 {
     font-size: 8vw;
-    color: #ffffff; /* Match the heading color */
+    color: #ffffff; 
     font-family: 'Milky Vantage', sans-serif;
     margin-bottom: 20px;
     font-weight: lighter;
 }
 
 .about h2 span {
-    color: #FF926A; /* Highlight color */
+    color: #FF926A; 
 }
 
 .about p {
@@ -277,10 +254,8 @@ header {
     background-color: #ff7f4f;
 }
 
-
-/* Documentation Button Section */
 .documentation {
-    background-image: url('Assets/Background.png'); /* Use your desired background image */
+    background-image: url('Assets/Background.png');
     background-repeat: repeat-y;
     height: 100vh;
     background-size: cover;
@@ -308,7 +283,6 @@ header {
     background-color: #a1a1a1;
 }
 
-/* Sub-Events Section */
 .sub-events {
     padding: 20px;
     background-image: url('Assets/Background.png');
@@ -339,26 +313,38 @@ header {
 .sub-event-card {
     background-color: #111;
     border-radius: 150px;
-    padding: 10px; /* Reduce padding */
-    margin: 10px auto; /* Reduce margin */
-    width: 45%; /* Scale down width */
+    padding: 10px; 
+    margin: 10px auto; 
+    width: 45%; 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid #786EB0; /* Adjust the border thickness */
+    border: 7.5px solid #786EB0;
     transition: transform 0.3s;
     width: 650px;
     height: 187px;
     top: 0;
     left: 0;
     background-color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+.sub-event-card:nth-child(2) {
+    margin-left: 200px;
+}
+
+.sub-event-card:nth-child(3) {
+    margin-right: 200px;
+}
+
+.sub-event-card:nth-child(4) {
+    margin-left: 200px;
 }
 
 .sub-event-card:hover {
     transform: scale(1.05);
 }
 
-/* Adjusting Colors for Each Card */
 .sub-event-card:nth-child(2) {
     border-color: #03588C
 }
@@ -367,29 +353,26 @@ header {
     border-color:#027373;
 }
 
-/* Event Content Layout */
 .sub-event-content {
     display: flex;
     align-items: center;
     margin-left: 30px;
+    gap: 20px;
 }
 
 .sub-event-icon {   
-    width: 200px; /* Increased icon size */
+    width: 200px; 
     height: auto;
     display: flex;
 }
 
-/* Event Title Styling */
 .sub-event-card h3 {
     color: #786EB0;
     font-size: 64px;
     font-family: 'Milky Vantage', sans-serif;
     text-align: left;
     font-weight: lighter;
-    font-size: 48px; /* Adjusted size to fit in box */
     margin: 0;
-    position: relative;
 }
 
 .sub-event-card:nth-child(2) h3 {
@@ -400,24 +383,23 @@ header {
     color: #027373;
 }
 
-/* Event Description Text */
 .sub-event-card p {
     color: #fff;
     font-size: 1.3vw;
     max-width: 600px;
     font-family: 'Space Mono', sans-serif;
     text-align: left;
+    margin-right: 25px;
 }
 
-/* Button Styling */
 .arrow-btn {
     background-color: transparent;
     color: #fff;
     font-size: 20px;
-    border: 3px solid #fff; /* Thicker border for the button */
+    border: 3px solid #fff; 
     border-radius: 50%;
-    width: 70px; /* Slightly larger button */
-    height: 70px;
+    width: 70px; 
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -425,15 +407,15 @@ header {
     text-decoration: none;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
     background-color: transparent;
+    margin-right: 20px;
 }
 
 .arrow-btn:hover {
-    background-color: #3F9AD2;
+    background-color: #786EB0;
     color: #000;
     box-shadow: 0 0 20px rgba(63, 154, 210, 0.8);
 }
 
-/* Hover Effect for Each Card's Button */
 .sub-event-card:nth-child(2) .arrow-btn:hover {
     background-color: #3F9AD2;
     box-shadow: 0 0 20px rgba(55, 215, 156, 0.8);
@@ -444,7 +426,6 @@ header {
     box-shadow: 0 0 20px rgba(199, 167, 229, 0.8);
 }
 
-/* Footer Section */
 .footer {
     width: auto;
     background-color: #1A1A1A;
@@ -529,7 +510,6 @@ header {
     color: #fff;
 }
 
-/* Custom Sub-Event Link Colors */
 .footer-column a.electra {
     color: #3F9AD2;
 }
@@ -542,7 +522,6 @@ header {
     color: #C7A7E5;
 }
 
-/* Line Separator */
 .footer-container::before {
     content: '';
     position: absolute;
@@ -553,13 +532,7 @@ header {
     background-color: #fff;
 }
 
-
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .burger {
-        display: block;
-    }
-
     nav ul {
         display: none;
         flex-direction: column;
