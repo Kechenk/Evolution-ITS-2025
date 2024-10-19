@@ -255,12 +255,11 @@ header {
 
 .about p {
     font-family: 'Space Mono', sans-serif;
-    font-size: 1.5vw;
-    max-width: 1000px;
+    font-size: 20px;
+    max-width: 900px;
     margin-bottom: 30px;
     line-height: 1.5;
     color: white;
-    font-weight: lighter;
 }
 
 .learn-more-btn {
@@ -278,11 +277,20 @@ header {
     background-color: #ff7f4f;
 }
 
+
 /* Documentation Button Section */
 .documentation {
+    background-image: url('Assets/Background.png'); /* Use your desired background image */
+    background-repeat: repeat-y;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 
 .last-year-doc-btn {
@@ -310,7 +318,7 @@ header {
 }
 
 .sub-events h2 {
-    font-size: 3vw;
+    font-size: 115px;
     font-family: 'Milky Vantage', sans-serif;
     margin-bottom: 40px;
     font-weight: lighter;
@@ -331,17 +339,20 @@ header {
 .sub-event-card {
     background-color: #111;
     border-radius: 150px;
-    padding: 15px; /* Reduce padding */
+    padding: 10px; /* Reduce padding */
     margin: 10px auto; /* Reduce margin */
-    width: 50%; /* Scale down width */
+    width: 45%; /* Scale down width */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid #027373; /* Adjust the border thickness */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Slightly reduce shadow depth */
+    border: 5px solid #786EB0; /* Adjust the border thickness */
     transition: transform 0.3s;
+    width: 650px;
+    height: 187px;
+    top: 0;
+    left: 0;
+    background-color: #1a1a1a;
 }
-
 
 .sub-event-card:hover {
     transform: scale(1.05);
@@ -353,37 +364,40 @@ header {
 }
 
 .sub-event-card:nth-child(3) {
-    border-color:#786EB0
+    border-color:#027373;
 }
 
 /* Event Content Layout */
 .sub-event-content {
     display: flex;
     align-items: center;
-    gap: 10px; /* Increased gap between icon and text */
+    margin-left: 30px;
 }
 
-.sub-event-icon {
-    width: 100px; /* Increased icon size */
+.sub-event-icon {   
+    width: 200px; /* Increased icon size */
     height: auto;
-    display: flexbox;
-    flex-grow: 1;
+    display: flex;
 }
 
 /* Event Title Styling */
 .sub-event-card h3 {
-    color: #90C6E8;
-    font-size: 2.2vw;
+    color: #786EB0;
+    font-size: 64px;
     font-family: 'Milky Vantage', sans-serif;
     text-align: left;
+    font-weight: lighter;
+    font-size: 48px; /* Adjusted size to fit in box */
+    margin: 0;
+    position: relative;
 }
 
 .sub-event-card:nth-child(2) h3 {
-    color: #37D79C;
+    color: #3F9AD2;
 }
 
 .sub-event-card:nth-child(3) h3 {
-    color: #C7A7E5;
+    color: #027373;
 }
 
 /* Event Description Text */
@@ -393,15 +407,13 @@ header {
     max-width: 600px;
     font-family: 'Space Mono', sans-serif;
     text-align: left;
-
 }
 
 /* Button Styling */
 .arrow-btn {
-    flex-grow: 1;
     background-color: transparent;
     color: #fff;
-    font-size: 2vw;
+    font-size: 20px;
     border: 3px solid #fff; /* Thicker border for the button */
     border-radius: 50%;
     width: 70px; /* Slightly larger button */
@@ -412,6 +424,7 @@ header {
     transition: 0.3s ease;
     text-decoration: none;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    background-color: transparent;
 }
 
 .arrow-btn:hover {
@@ -422,12 +435,12 @@ header {
 
 /* Hover Effect for Each Card's Button */
 .sub-event-card:nth-child(2) .arrow-btn:hover {
-    background-color: #37D79C;
+    background-color: #3F9AD2;
     box-shadow: 0 0 20px rgba(55, 215, 156, 0.8);
 }
 
 .sub-event-card:nth-child(3) .arrow-btn:hover {
-    background-color: #C7A7E5;
+    background-color: #027373;
     box-shadow: 0 0 20px rgba(199, 167, 229, 0.8);
 }
 
@@ -490,7 +503,7 @@ header {
 .footer-column h3 {
     font-size: 1.5rem;
     color: #fff;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Space Mono', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -501,7 +514,7 @@ header {
 }
 
 .footer-column li {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .footer-column a {
@@ -509,6 +522,7 @@ header {
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
+    font-family: 'Space Mono', sans-serif;
 }
 
 .footer-column a:hover {
@@ -580,5 +594,56 @@ header {
 
     .astronaut-background {
         width: 100%;
+    }
+
+    .sub-event-card {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .sub-event-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .sub-event-card h3 {
+        font-size: 36px;
+    }
+
+    .sub-event-card p {
+        font-size: 3.5vw;
+    }
+
+    .sub-event-icon {   
+        width: 150px;
+        height: auto;
+        display: inline;
+    }
+
+    .arrow-btn {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sub-event-card {
+        width: 95%;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .sub-event-card h3 {
+        font-size: 28px;
+    }
+
+    .sub-event-card p {
+        font-size: 4vw;
+    }
+
+    .arrow-btn {
+        width: 50px;
+        height: 50px;
     }
 }

@@ -6,13 +6,16 @@
 }
 
 body {
-    background-image: url('pexels-philippedonn-1169754.jpg'); /* Ganti dengan link gambar background Anda */
+    background-image: url('pexels-philippedonn-1169754.jpg'); /* Use your desired background image */
+    background-repeat: repeat-y;
+    height: 100vh;
     background-size: cover;
     background-position: center;
-    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .login-container {
