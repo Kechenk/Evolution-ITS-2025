@@ -106,6 +106,21 @@ body {
   margin-bottom: 5px;
 }
 
+.password-input{
+  display: flex;
+  position: relative;
+}
+
+.password-input .passwordImg{
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-65%);
+  width: 2rem;
+  cursor: pointer;
+}
+
+
 .register-form small {
   display: block;
   color: #444444;

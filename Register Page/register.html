@@ -21,7 +21,10 @@
             <input type="email" id="email" placeholder="Masukkan Email Anda" required>
 
             <label for="password">Password <span class="required">*</span></label>
-            <input type="password" id="password" placeholder="Masukkan Password" required>
+            <div class="password-input">
+                <input type="password" id="password" placeholder="Masukkan Password" required>
+                <img id="togglePasswordImg" class="passwordImg" src="./hidden.png" alt="">
+            </div>
             <small>Password harus mengandung minimal 8 karakter yang terdiri atas kombinasi huruf besar, huruf kecil, dan angka</small>
 
             <label for="phone">Nomor Telepon <span class="required">*</span></label>
@@ -53,4 +56,20 @@
     </div>
 
 </body>
+<script>
+        const passwordField = document.getElementById('password');
+        const togglePasswordImg = document.getElementById('togglePasswordImg');
+
+        togglePasswordImg.addEventListener('click', function() {
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text'; // Show the password
+                togglePasswordImg.src = 'visible.png'; // Change to visible icon
+                togglePasswordImg.alt = 'Hide Password'; // Change alt text
+            } else {
+                passwordField.type = 'password'; // Hide the password
+                togglePasswordImg.src = 'hidden.png'; // Change to hidden icon
+                togglePasswordImg.alt = 'Show Password'; // Change alt text
+            }
+        });
+</script>
 </html>
