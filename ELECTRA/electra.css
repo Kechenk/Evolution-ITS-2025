@@ -404,7 +404,6 @@ header {
     font-weight: lighter;
 }
 
-
 .pendaftaran {
     background-image: url('Assets/BackgroundFlip.png'); /* Use your desired background image */
     background-repeat: repeat-y;
@@ -413,8 +412,6 @@ header {
     background-position: center;
     align-content: center;    
 }
-
-
 
 .pendaftaran-wrap{
     display: flex;
@@ -439,8 +436,6 @@ header {
     margin-top: 0;
     font-weight: lighter;
 }
-
-
 
 .pendaftaran-content p {
     font-family: 'Space Mono', sans-serif;
@@ -469,7 +464,7 @@ header {
 }
 
 .btn {
-    background-color: #45AFE4;
+    background-color: #30baff;
     font-family: 'Space Mono', sans-serif;
     border: none;
     padding: 15px 30px;
@@ -477,6 +472,8 @@ header {
     font-size: 1.2vw;
     cursor: pointer;
     border-radius: 1em;
+    border: 1px solid #45AFE4;
+    font-family: 'Space Mono', sans-serif;
 }
 
 .btn:hover {
@@ -484,8 +481,6 @@ header {
 }
 
 .btn-outline {
-    border: 2px solid #45AFE4;
-    font-family: 'Space Mono', sans-serif;
     padding: 15px 30px;
     color: white;
     background-color: none;
