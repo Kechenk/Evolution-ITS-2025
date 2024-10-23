@@ -3,38 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Registrasi - EVOLUTION 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head> 
 <body>
-    <div class="login-container">
-        
-        <div class="login-box">
-            <h1 class="login-title">LOGIN</h1>
-            <p class="login-subtitle">Silahkan masuk dengan akun anda</p>
-            <form action="#" method="post">
-                <label for="email">Email <span class="required">*</span></label>
-                <input type="email" id="email" name="email" placeholder="Masukkan Email Anda" required>
-                <p class="email-example">ex.: username@gmail.com</p>
+    
+    <div class="headline">
+        <a href="../index.html" class="back-home"><img src="./home-icon.png" alt="">Kembali ke home</a>
+        <h1>LOGIN</h1>
+        <h3>Silahkan masuk dengan akun anda</h3>
+    </div>
+    <div class="container">
+        <form class="login-form">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" placeholder="Masukkan Email  " required>
+            <small>ex. : username@gmail.com</small>
 
-                <label for="password">Password <span class="required">*</span></label>
-                <div class="password-container">
-                    <input type="password" id="password" name="password" placeholder="Masukkan Password" required>
-                    <span class="toggle-password" onclick="togglePassword()">👁</span>
-                </div>
+            <label for="password">Password <span class="required">*</span></label>
+            <div class="password-input">
+                <input type="password" id="password" placeholder="Masukkan Password" required>
+                <img id="togglePasswordImg" class="passwordImg" src="./hidden.png" alt="">
+            </div>
+            <a href="" class="forgot-password">Lupa Password?</a>
 
 
-                <a href="#" class="forgot-password">Lupa Password?</a>
+            <button type="submit" class="btn-login">Masuk</button>
+        </form>
 
-                <button type="submit" class="submit-btn">Masuk</button>
-                
-                <p class="register-link">Belum memiliki akun? <a href="..\Register Page\register.html">Registrasi</a> disini</p>
-            </form>
-            <a href="..\index.html" class="back-home">Kembali ke Home</a>
+        <p class="register-prompt">
+            Belum memiliki akun? <a href="..\Register Page\" class="register-link">Registrasi</a> disini
+        </p>
+
+        <div class="footer-colors">
+            <span style="background-color: #FF7A52;"></span>
+            <span style="background-color: #F8C100;"></span>
+            <span style="background-color: #9AE8B7;"></span>
+            <span style="background-color: #A5C5CC;"></span>
+            <span style="background-color: #CA73FF;"></span>
+            <span style="background-color: #B5B5B5;"></span>
+            <span style="background-color: #FF7A52;"></span>
         </div>
     </div>
-    <script src="app.js"></script>
 
-    
 </body>
+<script src="./script.js"></script>
 </html>
