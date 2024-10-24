@@ -155,16 +155,15 @@ header a:hover, .register-btn:hover, .login-btn:hover {
     height: 105vh;
     object-fit: cover;
     object-position: center;
-  }
+    background-image: url("./Assets/Background.png");
+}
 
 .astronaut-background {
-    position: absolute;
-    width: 30%;
+    width: 600px;
     height: auto;
     display: inline;
     object-fit: cover;
     object-position: center;
-    z-index: 1;
     background-size: contain;
 }
 
@@ -181,20 +180,17 @@ header a:hover, .register-btn:hover, .login-btn:hover {
 }
 
 .hero-content {
-    position: absolute;
-    bottom: -8.7%;
-    left: 50%;
-    transform: translateX(-50%);
     background-color: rgb(24, 24, 24);
-    height: 173px;
-    width: 489px;
+    height: 200px;
+    width: 600px;
     padding: 20px;
     text-align: center;
     z-index: 2;
     border: 5px solid transparent;
     border-radius: 22px;
-    border-image: url('Mask group.svg') 1 round;
+    border-image: url('Mask group.svg') 1;
     border-radius: 22px;
+    font-family: "Milky Vantage";
 }
 
 .hero-content h1 {
@@ -219,12 +215,8 @@ header a:hover, .register-btn:hover, .login-btn:hover {
 }
 
 .scroll-down {
-    position: absolute;
-    bottom: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
     cursor: pointer;
+    margin-top: 5rem;
 }
 
 .scroll-down img {
@@ -621,16 +613,8 @@ header a:hover, .register-btn:hover, .login-btn:hover {
         align-items: center;
     }
 
-    .hero h1 {
-        font-size: 40px;
-    }
-
-    .hero h1 span {
-        font-size: 30px;
-    }
-
     .hero-content {
-        width: 90%;
+        width: 80%;
         padding: 10px;
     }
 
