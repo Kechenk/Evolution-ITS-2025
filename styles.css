@@ -12,8 +12,8 @@
     src: local('Space Mono'), url('https://fonts.cdnfonts.com/s/15317/SpaceMono-Regular.woff') format('woff');
 }
 
+
 body {
-    font-family: 'Milky Vantage', sans-serif;
     margin: 0;
     padding: 0;
     color: white;
@@ -51,7 +51,6 @@ header {
   
 .logo-text {
     font-size: 24px;
-    font-family: 'Milky Vantage', sans-serif;
     color: white;
     display: flex;
     align-items: center;
@@ -69,15 +68,16 @@ header {
     font-size: 30px;
 }
   
-nav ul {
+header nav ul {
     list-style: none;
     display: flex;
+    font-family: "Space Mono";
+    font-weight: bold;
 }
   
 nav a {
     color: white;
     text-decoration: none;
-    font-family: 'Courier New', monospace;
 }
   
 .register-btn {
@@ -89,8 +89,8 @@ nav a {
     cursor: pointer;
     margin-right: 10px;
     background-color: rgb(255, 146, 106);
+    font-family: "Courier new", serif;
     font-weight: bold;
-    text-transform: uppercase;
 }
   
 .login-btn {
@@ -101,6 +101,7 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
     margin-left: 10px;
+    font-family: "Courier new", serif;
     font-weight: bold;
 }
   
@@ -363,22 +364,20 @@ header a:hover, .register-btn:hover, .login-btn:hover {
     transition: transform 0.3s;
     width: 650px;
     height: 187px;
-    top: 0;
-    left: 0;
     background-color: #1a1a1a;
     margin-bottom: 30px;
 }
 
 .sub-event-card:nth-child(2) {
-    margin-left: 200px;
+    margin-left: 0px;
 }
 
 .sub-event-card:nth-child(3) {
-    margin-right: 200px;
+    margin-right: 0px;
 }
 
 .sub-event-card:nth-child(4) {
-    margin-left: 200px;
+    margin-left: 0px;
 }
 
 .sub-event-card:hover {
@@ -398,7 +397,7 @@ header a:hover, .register-btn:hover, .login-btn:hover {
     align-items: center;
     margin-left: 30px;
     gap: 20px;
-}
+}   
 
 .sub-event-icon {   
     width: 200px; 
@@ -572,6 +571,37 @@ header a:hover, .register-btn:hover, .login-btn:hover {
     background-color: #fff;
 }
 
+@media (max-width: 1100px){
+
+
+    .footer .footer-logo{
+        margin: 0px 0px 2rem 0px;
+    }
+
+    .footer .footer-logo .footer-logo-img{
+        width: 130px;
+    }
+
+    .footer .footer-logo h2{
+        font-size: 3rem;
+        margin: 0px;
+    }
+    .footer .footer-logo h2 span{
+        font-size: 3rem;
+    }
+
+    .footer .footer-links{
+        margin: 0px;
+    }
+
+    .footer .footer-links .footer-column h3{
+        font-size: 1rem;
+    }
+    .footer .footer-links .footer-column ul{
+        font-size: 0.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
@@ -597,7 +627,6 @@ header a:hover, .register-btn:hover, .login-btn:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px; 
     }
 
     .hero h1 {
@@ -614,7 +643,7 @@ header a:hover, .register-btn:hover, .login-btn:hover {
     }
 
     .astronaut-background {
-        width: 100%;
+        width: 80%;
     }
 
     .sub-event-card {
@@ -646,9 +675,43 @@ header a:hover, .register-btn:hover, .login-btn:hover {
         width: 60px;
         height: 60px;
     }
+
+    
+    .footer {
+        padding: 3rem 1rem;
+    }
+
+    .footer .footer-container{
+        flex-direction: column;
+    }
+
+    .footer .footer-logo{
+        margin: 0px 0px 2rem 0px;
+    }
+
+    .footer .footer-logo .footer-logo-img{
+        width: 100px;
+    }
+
+    .footer .footer-logo h2{
+        font-size: 3rem;
+        margin: 0px;
+    }
+        
+    .footer .footer-logo h2 span{
+        font-size: 3rem;
+    }
+
+    .footer .footer-links{
+        margin: 0px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
+    .navbar{
+        display: none;
+    }
     .sub-event-card {
         width: 95%;
         flex-direction: column;
@@ -667,4 +730,41 @@ header a:hover, .register-btn:hover, .login-btn:hover {
         width: 50px;
         height: 50px;
     }
+
+    .footer {
+        padding: 3rem 1rem;
+    }
+
+    .footer .footer-container{
+        flex-direction: column;
+    }
+
+    .footer .footer-logo{
+        margin: 0px 0px 2rem 0px;
+    }
+
+    .footer .footer-logo .footer-logo-img{
+        width: 80px;
+    }
+
+    .footer .footer-logo h2{
+        font-size: 2rem;
+        margin: 0px;
+    }
+    .footer .footer-logo h2 span{
+        font-size: 2rem;
+    }
+
+    .footer .footer-links{
+        margin: 0px;
+        text-align: center;
+    }
+
+    .footer .footer-links .footer-column h3{
+        font-size: 1rem;
+    }
+    .footer .footer-links .footer-column ul{
+        font-size: 0.5rem;
+    }
+
 }
