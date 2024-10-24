@@ -573,6 +573,12 @@ header a:hover, .register-btn:hover, .login-btn:hover {
 
 @media (max-width: 1100px){
 
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        margin-right: 10px;
+        text-align: center;
+    }
 
     .footer .footer-logo{
         margin: 0px 0px 2rem 0px;
@@ -603,22 +609,8 @@ header a:hover, .register-btn:hover, .login-btn:hover {
 }
 
 @media (max-width: 768px) {
-    .navbar ul {
-        flex-direction: column;
-        text-align: center;
-        padding: 0;
-    }
-
-    .navbar ul li {
-        margin: 10px 0; /* Add spacing between menu items */
-    }
-
-    .navbar a {
-        font-size: 4vw; /* Adjust font size for smaller screens */
-    }
-
-    .nav-active {
-        display: flex;
+    .navbar{
+        display: none;
     }
 
 
