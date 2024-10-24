@@ -1,0 +1,232 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Milky Vantage';
+    src: url('https://fonts.cdnfonts.com/s/118477/MilkyVintage-Regular.woff') format('woff');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Space Mono'), url('https://fonts.cdnfonts.com/s/15317/SpaceMono-Regular.woff') format('woff');
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('Background-1.png');
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Agar background tetap saat di-scroll */
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 90px;
+    background-color: rgba(0, 0, 0, 0.01); /* Transparansi hitam 50% */
+    position: fixed; /* Membuat header tetap di atas saat scroll */
+    width: 100%;
+    z-index: 1;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; /* untuk memastikan logo dan teks berada di tengah vertikal */
+}
+
+.logo-image {
+    width: 65px; /* Anda bisa mengubah ukuran sesuai keinginan */
+    height: auto;
+    margin-right: 10px; /* Memberi sedikit jarak antara logo dan teks */
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column; /* Mengatur agar tulisan EVOLUTION dan 2025 berada dalam kolom */
+}
+
+.evolution {
+    font-size: 34px;
+    font-family: 'Milky Vantage';
+    color: #ff5a5f;
+    font-weight: lighter;
+}
+
+.year {
+    font-size: 34px;
+    font-family: 'Milky Vantage';
+    color: #ffffff;
+    margin-top: -10px; /* Menyesuaikan jarak vertikal */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    font-family: 'Space Mono';
+    font-weight: bold;
+    font-style: normal;
+    line-height: normal;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 22px;
+}
+
+.register-btn, .login-btn {
+    font-family: 'Space Mono';
+    padding: 10px 20px;
+    border-radius: 13px;
+    font-size: 20px;
+}
+
+.register-btn {
+    background-color: #ff5a5f;
+    color: white;
+    margin-right: 10px; /* Jarak antara tombol Register dan Login */
+}
+
+.login-btn {
+    border: 2px solid #ff5a5f;
+    color: #ff5a5f;
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('Background-1.png');
+    background-color: #2d2e69;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding-top: 200px; /* Tambahkan padding-top untuk memberi ruang bagi header */
+}
+
+.hero .content {
+    z-index: 1;
+}
+
+.electra-logo {
+    width: 271px;
+    height: 240px;
+    margin-bottom: -40px;
+    flex-shrink: 0;
+    filter: drop-shadow(10px 0px 100px #000); 
+}
+
+.electra-logo-tambahan {
+    width: 844px; /* Sesuaikan ukuran logo tambahan */
+    height: 152px;
+    display: block;
+    margin: 40px auto 0 auto; /* Jarak vertikal dari logo biru */
+    fill: linear-gradient(180deg, #45AFE4 19.05%, #17619A 91.17%);
+    filter: drop-shadow(3px 3px 0px rgba(255, 255, 255, 0.60));
+}
+
+h2 {
+    font-size: 7rem;
+    font-weight: bold;
+    color: #6eb5ff;
+}
+
+p {
+    font-size: 37px;
+    margin-top: 10px;
+    font-family: 'Space Mono';
+    text-align: center;
+    line-height: 50px;
+}
+
+.scroll-icon {
+    position: absolute;
+    bottom: 20px;
+}
+
+.scroll-icon img {
+    width: 30px;
+}
+
+/* Posisi pesawat */
+.plane {
+    position: absolute;
+    top: 30%; /* Jarak dari atas */
+    left: 0.5%; /* Jarak dari kiri */
+    width: 320px; /* Ukuran pesawat */
+    transform: rotate(0deg); /* Kemiringan pesawat */
+    z-index: 0; /* Supaya tetap di atas elemen lainnya */
+    opacity: 0.44;
+}
+
+/* Posisi satelit */
+.satellite {
+    position: absolute;
+    top: 15%; /* Jarak dari atas */
+    right: 5%; /* Jarak dari kanan */
+    width: 100px; /* Ukuran satelit */
+    transform: rotate(15deg); /* Kemiringan satelit */
+    z-index: 2; /* Supaya tetap di atas elemen lainnya */
+}
+
+/* Section tentang Electra */
+.about-electra {
+    background-color: rgba(0, 0, 0, 0.01); /* Warna latar belakang dengan transparansi */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.about-electra h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: 'Milky Vantage';
+    color: #FFF8E7;
+}
+
+.about-electra .highlight {
+    color: #45AFE4;
+}
+
+.about-electra p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'Space Mono';
+}
+
+.more-info-btn {
+    font-family: 'Space Mono';
+    color: #ffffff;
+    background-color: #17619A;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.more-info-btn:hover {
+    background-color: #6eb5ff;
+}
