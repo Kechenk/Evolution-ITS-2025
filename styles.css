@@ -265,6 +265,7 @@ header a:hover, .register-btn:hover, .login-btn:hover {
 
 .about p {
     font-family: 'Space Mono', sans-serif;
+    font-weight: 700;
     font-size: 20px;
     max-width: 900px;
     margin-bottom: 30px;
@@ -274,7 +275,8 @@ header a:hover, .register-btn:hover, .login-btn:hover {
 
 .learn-more-btn {
     background-color: #FF926A;
-    font-family: 'Space Mono', sans-serif;
+    font-family: 'Courier new', sans-serif;
+    font-weight: 700;
     border: none;
     padding: 15px 30px;
     color: white;
@@ -622,6 +624,15 @@ header a:hover, .register-btn:hover, .login-btn:hover {
         width: 80%;
     }
 
+    .about p{
+        font-size: 1.3rem;
+        width: 80%;
+    }
+
+    .about .learn-more-btn{
+        font-size: 1.3rem;
+    }
+
     .sub-event-card {
         width: 90%;
         flex-direction: column;
@@ -688,6 +699,16 @@ header a:hover, .register-btn:hover, .login-btn:hover {
     .navbar{
         display: none;
     }
+
+    .about p{
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    .about .learn-more-btn{
+        font-size: 1rem;
+    }
+
     .sub-event-card {
         width: 95%;
         flex-direction: column;
