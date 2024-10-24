@@ -357,21 +357,21 @@ header a:hover, .register-btn:hover, .login-btn:hover {
     border: 7.5px solid #786EB0;
     transition: transform 0.3s;
     width: 650px;
-    height: 187px;
+    /* height: 187px; */
     background-color: #1a1a1a;
     margin-bottom: 30px;
 }
 
 .sub-event-card:nth-child(2) {
-    margin-left: 0px;
+    margin-left: 5%;
 }
 
 .sub-event-card:nth-child(3) {
-    margin-right: 0px;
+    margin-right: 5%;
 }
 
 .sub-event-card:nth-child(4) {
-    margin-left: 0px;
+    margin-left: 5%;
 }
 
 .sub-event-card:hover {
@@ -418,10 +418,11 @@ header a:hover, .register-btn:hover, .login-btn:hover {
 
 .sub-event-card p {
     color: #fff;
-    font-size: 1.3vw;
+    font-size: 1.3rem;
     max-width: 600px;
     font-family: 'Space Mono', sans-serif;
     text-align: left;
+    font-weight: 700;
     margin-right: 25px;
 }
 
@@ -632,35 +633,45 @@ header a:hover, .register-btn:hover, .login-btn:hover {
     .about .learn-more-btn{
         font-size: 1.3rem;
     }
-
-    .sub-event-card {
-        width: 90%;
-        flex-direction: column;
-        height: auto;
-    }
     
     .sub-event-content {
         flex-direction: column;
-        gap: 10px;
+    }
+
+    .sub-events .sub-events-title h2{
+        font-size: 5rem;
+        margin: 5rem auto;
+        width: 100%;
+    }
+
+    .sub-event-card {
+        width: 80%;
+        flex-direction: column;
+        height: auto;
+        border-radius: 2rem;
+    }
+
+    .sub-event-card:nth-child(2),.sub-event-card:nth-child(3),.sub-event-card:nth-child(4){
+        margin: 5rem auto;
     }
     
-    .sub-event-card h3 {
-        font-size: 36px;
-    }
-
-    .sub-event-card p {
-        font-size: 3.5vw;
-    }
-
     .sub-event-icon {   
         width: 150px;
         height: auto;
         display: inline;
     }
+    .sub-event-card h3 {
+        font-size: 4rem;
+    }
+
+    .sub-event-card p {
+        font-size: 1.2rem;
+    }
 
     .arrow-btn {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
+        margin: 1rem auto;
     }
 
     
@@ -709,23 +720,44 @@ header a:hover, .register-btn:hover, .login-btn:hover {
         font-size: 1rem;
     }
 
+    .sub-event-content {
+        flex-direction: column;
+    }
+
+    .sub-events .sub-events-title h2{
+        font-size: 4rem;
+        margin: 6rem auto;
+        width: 100%;
+    }
+
     .sub-event-card {
-        width: 95%;
+        width: 80%;
         flex-direction: column;
         height: auto;
+        border-radius: 2rem;
+    }
+
+    .sub-event-card:nth-child(2),.sub-event-card:nth-child(3),.sub-event-card:nth-child(4){
+        margin: 2rem auto;
     }
     
+    .sub-event-icon {   
+        width: 150px;
+        height: auto;
+        display: inline;
+    }
     .sub-event-card h3 {
-        font-size: 28px;
+        font-size: 3rem;
     }
 
     .sub-event-card p {
-        font-size: 4vw;
+        font-size: 0.8rem;
     }
 
     .arrow-btn {
         width: 50px;
         height: 50px;
+        margin: 1rem auto;
     }
 
     .footer {
