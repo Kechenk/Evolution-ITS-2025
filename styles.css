@@ -321,7 +321,7 @@ header a:hover, .register-btn:hover, .login-btn:hover {
 .sub-events {
     padding: 20px;
     background-image: url('Assets/Background.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     text-align: center;
 }
@@ -608,7 +608,6 @@ header a:hover, .register-btn:hover, .login-btn:hover {
         display: none;
     }
 
-
     .hero {
         height: auto;
         display: flex;
@@ -674,7 +673,6 @@ header a:hover, .register-btn:hover, .login-btn:hover {
         margin: 1rem auto;
     }
 
-    
     .footer {
         padding: 3rem 1rem;
     }
