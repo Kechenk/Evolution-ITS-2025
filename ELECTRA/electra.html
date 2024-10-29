@@ -24,13 +24,39 @@
                     <li><a href="..\Login Page\index.html" class="login-btn">Login</a></li>
                 </ul>
             </nav>
+        </div>
+    </header>
+
+        <!-- Navbar Responsive (Tablet & Mobile) -->
+        <div class="navbar-responsive">
+            <div class="logo-text">
+                <a href="index.html" class="logo-link">
+                    <img src="../Assets/logo evolution 2.svg" alt="Icon 4">
+                    <p class="top">
+                        <span class="evolution-text">EVOLUTION</span> <br>
+                        <span class="year-text">2025</span>
+                    </p>
+                </a>
+            </div>
+        
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
         </div>
-    </header>
+        
+        <div class="menu-responsive">
+            <nav>
+                <ul>
+                    <li><a href="About\About.html">Tentang Kami</a></li>
+                    <li><a href="#sub-event">Event</a></li>
+                    <li><a href="Register Page\index.html" class="register-btn" style="margin: 0%;">Register</a></li>
+                    <li><a href="Login Page\index.html" class="login-btn" style="margin: 0%;">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Navbar Responsive (Tablet & Mobile) -->
     
     <section class="hero" id="hero">
         <img src="Assets\Background.png" alt="Background Image" class="hero-background"/>
@@ -68,27 +94,27 @@
             <div class="time-line">
                 <div>
                     <img src="Assets/electra bulan.png" alt="">
-                    day 1
+                    <span>Day 1</span>
                 </div>
                 <div>
                     <img src="Assets/electra bulan.png" alt="">
-                    day 2
+                    <span>Day 2</span>
                 </div>
                 <div>
                     <img src="Assets/electra bulan.png" alt="">
-                    day 3
+                    <span>Day 3</span>
                 </div>
                 <div>
                     <img src="Assets/electra bulan.png" alt="">
-                    day 4
+                    <span>Day 4</span>
                 </div>
                 <div>
                     <img src="Assets/electra bulan.png" alt="">
-                    day 5
+                    <span>Day 5</span>
                 </div>
                 <div>
                     <img src="Assets/electra bulan.png" alt="">
-                    day 6
+                    <span>Day 6</span>
                 </div>
             </div>
         </section>
@@ -100,11 +126,9 @@
                 <img src="Assets/electra bulan.png" alt="">
             </div>
             <div class="pendaftaran-content">
-                <h2>Daftar sekarang</h2>
-                <p>Olimpiade, rally, dan cerdas cermat</p>
-                <br>
-                <span>Tingkat SMA/SMK/MA sederajat</span>
-                <br>
+                <h2>Daftar sekarang!</h2>
+                <p>Olimpiade, rally, dan cerdas cermat Tingkat SMA/SMK/MA sederajat.
+                </p>
                 <span>Rp85.000,- /peserta</span>
 
                 <div class="pendaftaran-btn">
@@ -122,8 +146,8 @@
         <h2>Contact Person</h2>
         <div class="conper-content">
             <div class="conper-list">
-            <button type="button" class="btn">no whatsapp</button>  
-            <button type="button" class="btn">no whatsapp</button>  
+            <button type="button" class="btn">No Whatsapp</button>  
+            <button type="button" class="btn">No Whatsapp</button>  
             </div>
         </div>
         <!-- <p>Evolution (Electrical Event for Technology and Competition) merupakan suatu badan yang menaungi 3 sub-event, yaitu Electra (Electrical Competition Tour & Rally), Baronas (Lomba Robot Nasional), dan Stellar Mind Talks.</p>
@@ -177,30 +201,27 @@
 <!-- Footer Section -->
 <footer class="footer">
     <div class="footer-container">
-        <!-- Logo Section -->
         <div class="footer-logo">
-            <img src="Assets\logo evolution 2.png" alt="Evolution Logo" class="footer-logo-img">
+            <img src="Assets\logo evolution 2.svg" alt="Evolution Logo" class="footer-logo-img">
             <h2>EVOLUTION <span>2025</span></h2>
         </div>
 
-        <!-- Quick Links Section -->
         <div class="footer-links">
             <div class="footer-column">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="..\About\About.html">About</a></li>
-                    <li><a href="..\Login Page\index.html">Login</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="Login Page\index.html">Login</a></li>
                 </ul>
             </div>
 
-            <!-- Sub-Event Links Section -->
             <div class="footer-column">
                 <h3>Sub-Event</h3>
                 <ul>
-                    <li><a href="#hero" class="electra">Electra</a></li>
-                    <li><a href="..\BARONAS\baronas.html" class="baronas">Baronas</a></li>
-                    <li><a href="..\EVOLVE\evolve.html" class="evolve">Evolve</a></li>
+                    <li><a href="ELECTRA\electra.html" class="electra">Electra</a></li>
+                    <li><a href="BARONAS\baronas.html" class="baronas">Baronas</a></li>
+                    <li><a href="EVOLVE\evolve.html" class="evolve">Evolve</a></li>
                 </ul>
             </div>
         </div>
@@ -210,6 +231,34 @@
     <script src="script.js"></script>
     <div id="container3D"></div>
     <script type="module" src="app.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu-responsive');
+        
+        burger.addEventListener('click', function() {
+            console.log(menu);
+            menu.classList.toggle('active');
+            burger.classList.toggle('active');
+        });
+    
+        document.addEventListener('click', function(event) {
+            if (!menu.contains(event.target) && !burger.contains(event.target)) {
+                menu.classList.remove('active');
+                burger.classList.remove('active');
+            }
+        });
+    
+        const menuLinks = document.querySelectorAll('.menu-responsive a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+                burger.classList.remove('active');
+            });
+        });
+    });
+    </script>
 
 </body>
 </html>

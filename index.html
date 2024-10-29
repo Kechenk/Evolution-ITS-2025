@@ -29,6 +29,37 @@
         </div>
     </header>
 
+    <!-- Navbar Responsive (Tablet & Mobile) -->
+    <div class="navbar-responsive">
+        <div class="logo-text">
+            <a href="index.html" class="logo-link">
+                <img src="Assets\logo evolution 2.svg" alt="Icon 4">
+                <p class="top">
+                    <span class="evolution-text">EVOLUTION</span> <br>
+                    <span class="year-text">2025</span>
+                </p>
+            </a>
+        </div>
+    
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </div>
+    
+    <div class="menu-responsive">
+        <nav>
+            <ul>
+                <li><a href="About\About.html">Tentang Kami</a></li>
+                <li><a href="#sub-event">Event</a></li>
+                <li><a href="Register Page\index.html" class="register-btn" style="margin: 0%;">Register</a></li>
+                <li><a href="Login Page\index.html" class="login-btn" style="margin: 0%;">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Navbar Responsive (Tablet & Mobile) -->
+
     <section class="hero hero-background" id="hero">
         <img src="Assets\Astronaut 1.png" alt="Astronaut Image" class="astronaut-background">
         <div class="hero-content">
@@ -129,6 +160,33 @@
     <script src="script.js"></script>
     <div id="container3D"></div>
     <script type="module" src="app.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu-responsive');
+        
+        burger.addEventListener('click', function() {
+            menu.classList.toggle('active');
+            burger.classList.toggle('active');
+        });
+    
+        document.addEventListener('click', function(event) {
+            if (!menu.contains(event.target) && !burger.contains(event.target)) {
+                menu.classList.remove('active');
+                burger.classList.remove('active');
+            }
+        });
+    
+        const menuLinks = document.querySelectorAll('.menu-responsive a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.remove('active');
+                burger.classList.remove('active');
+            });
+        });
+    });
+    </script>
 
 </body>
 </html>
